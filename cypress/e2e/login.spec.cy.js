@@ -23,6 +23,7 @@ describe('Login Module', () => {
 
   it('login as problem_user', () => {
     login.loginForm("problem_user", "secret_sauce");
+    cy.get('[data-test="product_sort_container"]').should("be.visible");
   });
 
 
